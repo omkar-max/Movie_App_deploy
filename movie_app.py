@@ -10,7 +10,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 # Load the data
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"C:\Users\omkar\OneDrive\Desktop\Datasets\movies.csv")
+    # df = pd.read_csv(r"C:\Users\omkar\OneDrive\Desktop\Datasets\movies.csv")
+    df = pd.read_csv("movies.csv")
     df['genres'].fillna('', inplace=True)
     return df
 
